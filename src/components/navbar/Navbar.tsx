@@ -98,7 +98,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              <img width={'43.5px'} src="https://www.cbf.com.br/img/logo/logo-borda.png" alt="" />
+              <img width={'43.3px'} src="https://www.cbf.com.br/img/logo/logo-borda.png" alt="" />
             </Typography>
 
             {/* Desktop Navigation Items (Images) */}
@@ -114,7 +114,7 @@ function Navbar() {
                     alt={time.nome}
                     style={{ width: "30px", height: "35px" }}
                   />
-                </IconButton>
+                </IconButton> 
               ))}
             </Box>
           </Toolbar>
