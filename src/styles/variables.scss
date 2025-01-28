@@ -1,0 +1,12 @@
+$team-colors:hover (
+    'Flamengo': #e20e0e,
+    "S.E. Palmeiras": #009739,
+    "Corinthians": #000000,
+    "Santos": #ffffff
+);
+
+@each $team, $color in $team-colors {
+    &--#{$team} {
+      border-color: $color;
+    }
+  }

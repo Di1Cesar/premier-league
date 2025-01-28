@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.card {
+    @each $team, $color in $team-colors {
+        &--#{$team} {
+            background-color: $color;
+        }
+    }
+}
