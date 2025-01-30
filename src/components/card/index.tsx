@@ -11,7 +11,7 @@ interface CardProps {
 const Conteudo: React.FC<CardProps> = ({ id, nome, foto}) => {
   return (
     <>
-      <Card key={id} sx={{ width: 300, borderRadius: 5, boxShadow: 20, borderBottom: 8}}>
+      <Card key={id} sx={{ width: 300, borderRadius: 5, boxShadow: ' inset 0 0 0.7em black' , borderBottom: 8}}>
         <CardMedia
           sx={{ height: 10}}
         />
