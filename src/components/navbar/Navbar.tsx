@@ -34,6 +34,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  fontFamily: 'oxanium',
   color: 'inherit',
   width: '100%',
   '& .MuiInputBase-input': {
@@ -52,7 +53,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, backgroundColor: '#014dff'}}>
       <AppBar style={{backgroundColor: '#0d67e7'}} position="static">
         <Toolbar>
           <IconButton
@@ -77,7 +78,7 @@ export default function SearchAppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Procurar"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>

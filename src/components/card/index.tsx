@@ -1,6 +1,7 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import * as React from "react";
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import '../../styles/variables.scss'
 
 interface CardProps {
   id: number;
@@ -11,13 +12,13 @@ interface CardProps {
 const Conteudo: React.FC<CardProps> = ({ id, nome, foto}) => {
   return (
     <>
-      <Card key={id} sx={{ width: 300, borderRadius: 5, boxShadow: ' inset 0 0 0.7em black' , borderBottom: 8}}>
+      <Card key={id} sx={{ width: 300, borderRadius: 5 }} className="test">
         <CardMedia
           sx={{ height: 10}}
         />
         <CardContent>
           <center>
-          <Typography style={{fontFamily: 'sans-serif'}} gutterBottom variant="h5" component="div">
+          <Typography fontFamily={'oxanium'} gutterBottom variant="h6" component="div">
             {nome}
           </Typography>
             <img style={{marginTop:15}} height={70} src={foto} alt="" />

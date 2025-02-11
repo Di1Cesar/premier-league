@@ -9,7 +9,7 @@ const TelaJogadores = () => {
   return (
     <>
       <Navbar />
-      <Flex style={{ backgroundColor: "#ffcd00", justifyContent: "center", height: '80%' }}>
+      <Flex style={{ backgroundColor: 'whitesmoke', justifyContent: "center", height: '80%' }}>
         <FormJogadores></FormJogadores>
       </Flex>
       <Box>

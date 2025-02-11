@@ -9,11 +9,11 @@ export default function TelaTimes() {
   return (
     <>
       <Navbar></Navbar>
-      <Box sx={{ backgroundColor: "#ffcd00", height: 150 }}>
+      <Box sx={{ backgroundColor: 'whitesmoke', height: 150 }}>
         <FormTimes />
       </Box>
       <Grid2
-        sx={{ backgroundColor: "#ffcd00" }}
+        sx={{ backgroundColor: 'whitesmoke' }}
         justifyContent={"center"}
         container
         rowSpacing={5}
@@ -23,8 +23,8 @@ export default function TelaTimes() {
           <Conteudo key={time.id} nome={time.nome} foto={time.foto} id={0} />
         ))}
       </Grid2>
-      <Box sx={{ backgroundColor: "#ffcd00", height: 30 }}></Box>
-      <Footer/>
+      <Box sx={{ backgroundColor: 'whitesmoke', height: 30 }}></Box>
+      <Footer />
     </>
   );
 }

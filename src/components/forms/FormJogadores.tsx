@@ -16,12 +16,13 @@ const FormJogadores: React.FC = () => (
     <Box height={50}></Box>
     <Flex style={{ display: "flex", margin: 10, justifyContent: "center" }}>
       <Input
+      
         size="large"
         placeholder="Jogador"
-        style={{ width: 450, marginLeft: 10, marginRight: 10 }}
+        style={{ width: 450, marginLeft: 10, marginRight: 10,  fontFamily: 'oxanium' }}
       />
       <Select
-        style={{ width: 450, marginLeft: 10, marginRight: 10 }}
+        style={{ width: 450, marginLeft: 10, marginRight: 10, fontFamily: 'oxanium' }}
         size="large"
         showSearch
         placeholder="Posição"

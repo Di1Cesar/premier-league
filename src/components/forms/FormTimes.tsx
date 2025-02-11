@@ -16,12 +16,13 @@ const FormTimes: React.FC = () => (
     <Box height={50}></Box>
     <Flex style={{ display: "flex", margin: 10, justifyContent: "center" }}>
       <Input
+        
         size="large"
         placeholder="Time"
-        style={{ width: 450, marginLeft: 10, marginRight: 10 }}
+        style={{ width: 450, marginLeft: 10, marginRight: 10, backgroundColor: '', fontFamily: 'oxanium' }}
       />
       <Select
-        style={{ width: 450, marginLeft: 10, marginRight: 10 }}
+        style={{ width: 450, marginLeft: 10, marginRight: 10, fontFamily: 'oxanium' }}
         size="large"
         showSearch
         placeholder="Estado"
@@ -139,7 +140,7 @@ const FormTimes: React.FC = () => (
           },
         ]}
       />
-      <Button size="large" type="primary" icon={<SearchOutlined />}>
+      <Button style={{fontFamily: 'oxanium'}} size="large" type="primary" icon={<SearchOutlined />}>
         Procurar
       </Button>
     </Flex>

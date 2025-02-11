@@ -1,8 +1,8 @@
 import React from "react";
-import { Flex, Space, Table, Tag } from "antd";
+import { Flex, Table } from "antd";
 import type { TableProps } from "antd";
-import { times } from "../../static-data/Times";
 import { Box, Container } from "@mui/material";
+
 
 interface DataType {
   id: string;
@@ -10,7 +10,7 @@ interface DataType {
   idade: number;
   nacionalidade: string;
   posicao: string;
-  clube: string;
+  clube: React.ReactNode;
 }
 
 const columns: TableProps<DataType>["columns"] = [
@@ -88,22 +88,30 @@ const data: DataType[] = [
     idade: 32,
     nacionalidade: "Uruguaio",
     posicao: "MEI",
-    clube: "Flamengo",
+    clube: (
+      <>
+        <img
+        style={{height: '50px', justifyContent:'center', alignItems:'center', display:'flex'}}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Atletico_mineiro_galo.png/120px-Atletico_mineiro_galo.png"
+          alt="Escudo do Atlético Mineiro"
+        />
+      </>
+    ),
   },
 ];
 
 const Tabela: React.FC = () => (
   <>
-    <Box height={20} sx={{backgroundColor: '#ffcd00'}}></Box>
-    <Flex style={{ backgroundColor: "#ffcd00" }}>
+    <Box height={20} sx={{ backgroundColor: "whitesmoke" }}></Box>
+    <Flex style={{ backgroundColor: "whitesmoke" }}>
       <Container>
         {" "}
         <Table<DataType>
-          size={'large'}
+          size={"large"}
           columns={columns}
           dataSource={data}
           rowHoverable={true}
-        />{" "}
+        />
       </Container>
     </Flex>
   </>
