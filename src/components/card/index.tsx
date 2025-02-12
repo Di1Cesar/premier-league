@@ -9,10 +9,12 @@ interface CardProps {
   foto: string;
 }
 
+
+
 const Conteudo: React.FC<CardProps> = ({ id, nome, foto}) => {
   return (
     <>
-      <Card key={id} sx={{ width: 300, borderRadius: 5 }} className="test">
+      <Card key={id} sx={{ width: 300, borderRadius: 5 }} className="card">
         <CardMedia
           sx={{ height: 10}}
         />

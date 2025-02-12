@@ -140,7 +140,7 @@ const FormTimes: React.FC = () => (
           },
         ]}
       />
-      <Button style={{fontFamily: 'oxanium'}} size="large" type="primary" icon={<SearchOutlined />}>
+      <Button style={{fontFamily: 'oxanium', backgroundColor: '#00a032'}} size="large" type="primary" icon={<SearchOutlined />}>
         Procurar
       </Button>
     </Flex>

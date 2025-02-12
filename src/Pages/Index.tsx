@@ -19,13 +19,13 @@ export default function Principal() {
         <Container style={{ display: "flex", alignItems: "center" }}>
           <Button style={{ height: "15em", width: "70em", boxShadow:  '5px 0px', backgroundColor: '1b67cc' }} >
             <Link to={"/times"}>
-              <h1>Times</h1>
+              <h1 style={{fontFamily: 'oxanium'}}>Times</h1>
             </Link>
           </Button>
           <span style={{ width: "2em" }}></span>
           <Button  style={{ height: "15em", width: "70em", boxShadow:  '5px 0px', backgroundColor: '1b67cc'}} >
             <Link to={"/jogadores"}>
-              <h1>Jogadores</h1>
+              <h1 style={{fontFamily: 'oxanium'}}>Jogadores</h1>
             </Link>
           </Button>
         </Container>

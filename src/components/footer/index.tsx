@@ -13,7 +13,7 @@ const Footer = () => {
         }}
       >
         <img src="https://www.cbf.com.br/logo/logo-verde.svg" height={'60px'} style={{marginRight: 10}}/>
-        <Typography style={{ color: "white", textWrap: 'wrap' }}>
+        <Typography style={{ color: "white", textWrap: 'wrap', fontFamily: 'oxanium' }}>
           Confederação Brasileira de Futebol Ⓒ Todos os direitos reservados
         </Typography>
       </Flex>
